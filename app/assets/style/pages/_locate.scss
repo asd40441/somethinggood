@@ -1,0 +1,88 @@
+.area{
+    font-size: 24px;
+    select{
+        font-size: 18px;
+        width: 324px;
+        height: 45px;
+    }
+    span{
+        margin-right: 20px;
+    }
+    margin-bottom: 32px;
+    @include pad(){
+        font-size: 16px;
+        margin-bottom: 24px;
+        select{
+            font-size: 16px;
+        }
+    }
+    @include mobile(){
+        margin-bottom: 20px;
+    }
+}
+
+.placeflex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.placecard{
+    width: 33.333%;
+    margin-bottom: 32px;
+    padding: 0 15px;
+    &:nth-child(3n){
+        margin-right: 0;
+    }
+    ul{
+        border: 1px solid #00000020;
+        padding: 16px 28px;
+        li{
+            display: flex;
+            font-size: 20px;
+        }
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        img{
+            width: 20px;
+        }
+    }
+    a{
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 19px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+    }
+    @include pad(){
+        width: 50%;
+        margin-bottom: 20px;
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+    }
+    @include mobile(){
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+.placetitle{
+    border: 1px solid #00000020;
+    font-size: 24px;
+    padding: 12px 24px;
+    @include pad(){
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+}

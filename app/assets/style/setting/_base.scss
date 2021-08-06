@@ -1,0 +1,56 @@
+body {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1110px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    @include pad() {
+        max-width: 992px;
+        margin: 0 39px;
+    }
+
+    @include mobile() {
+        max-width: 767px;
+        margin: 0 15px;
+    }
+}
+
+.pagetitle{
+    font-size: 48px;
+    font-weight: 700;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 60px;
+    @include pad(){
+        border-left: 4px solid #9F1213;
+        margin-bottom: 40px;
+    }
+    @include mobile(){
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+}
+
+.pagewidth{
+    max-width: 1188px;
+    padding: 0 39px;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 128px;
+    @include pad(){
+        margin-top: 60px;
+        margin-bottom: 72px;
+    }
+    @include mobile(){
+        margin-top: 36px;
+        margin-bottom: 56px;
+        padding: 0 15px;
+    }
+}

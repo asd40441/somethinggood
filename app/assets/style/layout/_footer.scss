@@ -1,0 +1,185 @@
+.footer {
+	background-color: #AA0601;
+	color: white;
+	padding-top: 32px;
+	padding-bottom: 39px;
+
+	hr {
+		margin-top: 8px;
+	}
+
+	@include pad() {
+		padding-top: 26px;
+
+		hr {
+			margin-top: 4px;
+		}
+	}
+
+	@include mobile() {
+		padding-top: 13px;
+		padding-bottom: 24px;
+	}
+}
+
+.footerwidth {
+	max-width: 1110px;
+	margin: 0 auto;
+	padding: 0 39px;
+
+	@include mobile() {
+		padding: 0 15px;
+	}
+}
+
+.footertop {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footerlink {
+	width: 550px;
+	padding-top: 12px;
+	display: flex;
+	flex-wrap: wrap;
+
+	@include pad() {
+		width: 500px;
+	}
+
+	@include mobile() {
+		width: 200px;
+	}
+}
+
+.footeraside {
+	a {
+		margin-left: 32px;
+	}
+
+	@include pad() {
+		a {
+			margin-left: 24px;
+		}
+	}
+
+	@include mobile() {
+		margin-top: 11px;
+
+		a:nth-child(1) {
+			margin-left: 0;
+		}
+	}
+}
+
+.footermenu {
+	margin-bottom: 36px;
+	
+	a {
+		color: white;
+		text-decoration: none;
+		margin-right: 48px;
+		font-size: 16px;
+		&:hover{
+			background-color: #ff5100;
+		}
+	}
+
+	@include pad() {
+		a {
+			margin-right: 40px;
+		}
+	}
+
+	@include mobile() {
+		display: none;
+	}
+}
+
+.footerdata {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 36px;
+	font-family: 'Roboto';
+	margin-bottom: 16px;
+
+	.footericon {
+		width: 48px;
+		margin-right: 20px;
+	}
+
+	@include pad() {
+		margin-bottom: 12px;
+		font-size: 20px;
+
+		.footericon {
+			width: 24px;
+		}
+	}
+
+	@include mobile() {
+		font-size: 16px;
+
+		.footericon {
+			width: 20px;
+		}
+	}
+}
+
+.footeraside {
+	display: flex;
+
+	img {
+		height: 48px;
+	}
+
+	@include pad() {
+		img {
+			height: 24px;
+		}
+	}
+}
+
+.footerfoot {
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+
+	p {
+		font-family: 'Roboto';
+	}
+
+	ul {
+		display: flex;
+		font-size: 14px;
+
+		li {
+			margin-left: 48px;
+		}
+	}
+
+	@include pad() {
+		margin-top: 24px;
+	}
+
+	@include mobile() {
+		flex-wrap: wrap;
+		margin-top: 16px;
+		font-size: 14px;
+
+		p {
+			width: 100%;
+		}
+
+		ul {
+			display: block;
+
+			li {
+				margin-left: 0;
+				margin-top: 8px;
+			}
+		}
+	}
+}

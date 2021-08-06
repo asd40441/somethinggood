@@ -1,23 +1,12 @@
-$color: #00cc99;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap');
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import './setting/_variable';
+@import './setting/_mixin';
+@import './setting/_reset';
+@import './setting/_base';
+@import './layout/_header';
+@import './layout/_footer';
+@import "./pages/_index";
+@import "./pages/_helper";
+@import "./pages/locate";
+@import "./pages/locates"

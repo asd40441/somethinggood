@@ -1,0 +1,36 @@
+.helperh2{
+    font-size: 32px;
+    margin-bottom: 36px;
+    @include pad(){
+        margin-bottom: 32px;
+    }
+    @include mobile(){
+        margin-bottom: 24px;
+    }
+}
+
+.question{
+    margin-bottom: 32px;
+    .qtitle{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 16px;
+    }
+    .qcontent{
+        max-width: 825px;
+        margin: 0 auto;
+    }
+    @include pad(){
+        margin-bottom: 24px;
+        .qcontent{
+            max-width: 630px;
+        }
+    }
+    @include mobile(){
+        margin-bottom: 20px;
+        .qtitle{
+            margin-bottom: 8px;
+        }
+    }
+}
